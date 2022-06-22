@@ -1,9 +1,10 @@
 import os
 import math
+import glob
 
 class SearchEngine:
     def __init__(self):
-        self.files = self.get_directory("C:\\Users\\Chrysenberg69420\\PycharmProjects\\Wildcard\\Document")
+        self.files = self.get_directory()
 
     def __call__(self,keys):
         return_result=[]
@@ -164,15 +165,9 @@ class SearchEngine:
         li = s.rsplit(old, occurrence)
         return new.join(li)
 
-    def get_directory(self,path):
-        os.chdir(path)
-        # iterate through all file
-        files=[]
-        for file in os.listdir():
-            # Check whether file is in text format or not
-            if file.endswith(".txt"):
-                files.append(f"{path}\\{file}")
-        return files
+    def get_directory(self):
+        DOCUMENT_DIRECTION = ".\\Document"
+        return glob.glob(DOCUMENT_DIRECTION + "\\*.txt")
 
 #a=SearchEngine()
 #list=a(input())
