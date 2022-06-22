@@ -1,5 +1,7 @@
 # Wildcard_sth_idk
 
+Chay web_display.py rồi click vào cái link IP
+
 Xài 2 search engine khác nhau qua hàm if else.
 
 Nếu là 1 từ hoặc nhiều từ (cách nhau dấu phẩy) thì xài engine chính. Gợi ý search: cut?,d*g
