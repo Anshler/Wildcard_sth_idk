@@ -1,6 +1,6 @@
 # Wildcard_sth_idk
 
-Xài 2 search engine khác nhau
+Xài 2 search engine khác nhau qua hàm if else.
 
 Nếu là 1 từ hoặc nhiều từ (cách nhau dấu phẩy) thì xài engine chính. Gợi ý search: cut?,d*g
 
