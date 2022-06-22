@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <h1 style="text-align:center">Page Result</h1>
+    <h2>Your search query is: {{search_query}}</h2>
+    <div>
+        <h3>{{msg}}</h3>
+        {% for dir, num_result, name in content %}
+            <p>found {{num_result}} results</p>
+            <p>file name: {{name}}</p>
+            <p>directory: {{dir}}</p>
+
+            <p><br></p>
+        {% endfor %}
+    </div>
+</body>
+
+
+</html>
